@@ -28,12 +28,10 @@ datas = {
 
 #抓取網站資料
 for i in range(1,21):
-    url = f'https://www.104.com.tw/jobs/search/?ro=0&keyword=%E8%B2%A1%E5%8B%99%E6%9C%83%E8%A8%88&expansionType=area%2Cspec%2Ccom%2Cjob%2Cwf%2Cwktm&area=6001001000%2C6001002000&order=14&asc=0&page={page}&mode=s&jobsource=2018indexpoc' #財務會計
-
-    url1 = f'https://www.104.com.tw/jobs/search/?ro=0&jobcat=2007002000%2C2007001000&expansionType=area%2Cspec%2Ccom%2Cjob%2Cwf%2Cwktm&area=6001001000%2C6001002000&order=11&asc=0&page={page}&mode=s&jobsource=2018indexpoc' #IT
+    url = f'https://www.104.com.tw/jobs/search/?ro=0&jobcat=2007002000%2C2007001000&expansionType=area%2Cspec%2Ccom%2Cjob%2Cwf%2Cwktm&area=6001001000%2C6001002000&order=11&asc=0&page={page}&mode=s&jobsource=2018indexpoc' #IT
     
     #解析網頁上的元素
-    t = requests.get(url1, headers=my_headers)
+    t = requests.get(url, headers=my_headers)
     ObjSoup = BeautifulSoup(t.text,'html.parser')
     jobs = ObjSoup.find_all('article',class_='js-job-item')
     for job in jobs:
