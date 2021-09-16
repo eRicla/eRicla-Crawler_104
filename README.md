@@ -52,4 +52,4 @@ df.to_excel(file, encoding="utf-8", index=False)  #file的檔名跟路徑是在�
 ```
 
 
-#這是還原的版本
+#測試換資料匣路徑，是否還可以正常git sync
