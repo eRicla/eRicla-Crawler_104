@@ -51,10 +51,5 @@ df = pd.DataFrame(datas, columns=['頁數','刊登日期', '職缺名稱'])
 df.to_excel(file, encoding="utf-8", index=False)  #file的檔名跟路徑是在一開始就定義好的
 ```
 
-<<<<<<< HEAD
+
 #這是還原的版本
-=======
-#test增加新
-#增加這個
-#增加第三個
->>>>>>> 85f46be4de9886f5b41cd5803d8357c5b7424c0a
